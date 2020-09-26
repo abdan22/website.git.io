@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdan Syakuro 4193250022</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --warna-background: #f5f5f5;
+      --warna-1: #fff;
+      --warna-2: #6747C7;
+      --warna-text: ##0C0C0C;
+      --warna-shadow: rgba(67, 65, 79, 0.1);
+      --border-radius: 0.5rem;
+
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Poppins;
+      font-style: normal;
+      background: var(--warna-background);
+      color: var(--warna-text);
+      padding-top: 80px;
+    }
+
+    .header {
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      margin: 0;
+      left: 0px;
+      top: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: content-box;
+      background: var(--warna-1);
+      box-shadow: 0px 4px 9px var(--warna-shadow);
+    }
+
+    .nav {
+      list-style-type: none;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+    }
+
+    .nav>li {
+      margin-right: 52px;
+    }
+
+    .nav>li>a {
+      text-decoration: none;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      color: var(--warna-text);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      padding-left: 52px;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 54px;
+      color: var(--warna-text);
+    }
+
+    h2 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 27px;
+      color: var(--warna-text);
+    }
+
+    .title>a {
+      text-decoration: none;
+    }
+
+    .artikel {
+      display: flex;
+      justify-content: center;
+    }
+
+    .artikel>img {
+      max-width: 1440px;
+      width: 80%;
+      border-radius: var(--border-radius);
+      box-shadow: var(--warna-shadow);
+      align-items: center;
+    }
+
+    .wrapper {
+      counter-reset: number;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem 0 1rem 0;
+    }
+
+    .container {
+      box-shadow: 0px 4px 9px var(--warna-shadow);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      width: 30%;
+      max-width: 300px;
+      min-width: 300px;
+      margin: 2rem 1rem;
+      background: var(--warna-1);
+      text-align: center;
+      position: relative;
+    }
+
+    .container::before {
+      counter-increment: number;
+      content: counter(number);
+      width: 4rem;
+      height: 4rem;
+      background: var(--warna-2);
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      top: -2rem;
+      left: 40%;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 4rem;
+      color: var(--warna-1)
+    }
+
+    .title {
+      margin: 2rem 0 1rem 0;
+    }
+
+    .profile {
+      box-shadow: 0px 4px 9px var(--warna-shadow);
+      border-radius: var(--border-radius);
+      padding: 1rem;
+      margin: 2rem 1rem;
+      width: auto;
+      max-width: 1440px;
+      min-width: 300px;
+
+      background: var(--warna-1);
+      align-items: center;
+      position: relative;
+      counter-reset: number;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .biodata {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+
+    .foto {
+      margin-right: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="" class="logo">
+        <span class="logo_img"><img src="img/logo.svg" alt=""></span>
+      </a>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="artikel">
+      <img src="img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Foto Artikel">
+    </div>
+
+    <h1>Internal CSS dan Eksternal CSS</h1>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2 class="title">
+          <a href="index2.html" target="_blank">Internal CSS</a>
+        </h2>
+        <p class="deskripsi">Kode CSS internal diletakkan di dalam bagian head pada halaman. Class dan ID bisa digunakan
+          untuk merujuk pada kode CSS, namun hanya akan aktif pada
+          halaman tersebut. </p>
+      </div>
+
+      <div class="container">
+        <h2 class="title">
+          <a href="index.html" target="_blank">Eksternal CSS</a>
+        </h2>
+        <p class="deskripsi">File CSS eksternal biasanya diletakkan setelah bagian head pada halaman HTML. Dengan cara
+          menghubungkannya ke file .CSS eksternal sehingga file HTML dan CSS terpisah</p>
+      </div>
+
+      <div class="container">
+        <h2 class="title">Inline CSS</h2>
+        <p class="deskripsi">Inline CSS diletakkan didalam tag HTML tertentu yang ingin diberi style. Namun cara ini
+          kurang direkomendasikan, karena setiap tag HTML harus diberikan style satu per satu</p>
+      </div>
+    </div>
+
+    <div class="profile" id="about">
+      <div class="biodata">
+        <div class="foto">
+          <img src="img/foto.png" alt="profile picture">
+        </div>
+
+        <div class="deskripsi">
+          <h2>Abdan Syakuro</h2>
+          <h3>4193250022</h3>
+          <p>Website ini dibuat untuk memenuhi tugas mata kuliah Perancangan dan Pemrograman Web</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
